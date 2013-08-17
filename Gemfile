@@ -38,6 +38,9 @@ gem 'bourbon'
 # Bourbon Neat
 gem 'neat'
 
+# Font Awesome
+gem "font-awesome-rails"
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
