@@ -2,20 +2,121 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-html {
-    font-size: 16px
-}
+//      -------------------------------------------------
+//
+//      RESETS, VARIABLES, MIXINS, &C.
+//
+//      -------------------------------------------------
 
-body {
+// Resets
+p { -webkit-margin-before: 0;
+    -webkit-margin-after: 0; }
+
+a { text-decoration: none; }
+
+
+// Variables
+$bgclr: rgb(254,254,254);   // Background colour
+$txtrg: hsl(0,0,10);        // Text - 90%
+$txtlt: hsl(0,0,40);        // Text - 70%
+$coral:  #FF4040;
+
+// Mixins
+@mixin whitneyBook {
     font-family: 'Whitney SSm A', 'Whitney SSm B';
-    font-size: 1.12rem;
     font-weight: 400;
     font-style: normal;
 }
 
-// Enter Neat
-section {
-  @include outer-container;
-  aside { @include span-columns(3); }
-  article { @include span-columns(9); }
+@mixin whitneySemiBold {
+    font-family: 'Whitney SSm A', 'Whitney SSm B';
+    font-weight: 600;
+    font-style: normal;
+    }
+
+@mixin whitneySCLight {
+    font-family: 'Whitney SSm SC A', 'Whitney SSm SC B';
+    font-weight: 300;
+    font-style: normal;
 }
+
+// Style
+
+//      -------------------------------------------------
+//
+//      TYPE
+//
+//      -------------------------------------------------
+
+html {
+    font-size: 12px;
+    }
+
+body {
+    @include whitneyBook;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: $txtrg;
+    background: $bgclr;
+    }
+
+bm {
+    @include whitneySemiBold;
+}
+
+p.indent {
+    text-indent: 4rem;
+}
+
+p.block + p {
+    margin-top: 2rem;
+}
+
+.title {
+    @include whitneySCLight;
+    color: $txtlt;
+    letter-spacing: 1px;
+}
+
+.contents_list,
+.contents_list li {
+    list-style: none;
+    line-height: 2rem;
+    font-size: 1.25rem;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: $coral;
+    border-bottom: 1px solid transparent;
+    @include transition( all 0.2s ease-out );
+}
+
+a:hover,
+a:focus {
+    border-bottom: 1px solid $coral;
+}
+
+//      -------------------------------------------------
+//
+//      LAYOUT
+//
+//      -------------------------------------------------
+
+section {
+    @include outer-container;
+    margin-top: 8rem;
+
+    header { 
+        @include span-columns(3);
+        }
+    article { 
+        @include span-columns(9);
+        @include omega();
+        }
+    article + article {
+        @include shift(3);
+        margin-top: 4rem;
+        }
+    }
