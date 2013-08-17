@@ -32,6 +32,13 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Bourbon
+gem 'bourbon'
+
+# Bourbon Neat
+gem 'neat'
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
