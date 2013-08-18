@@ -1,1 +1,15 @@
-Hello
+<div class="menu hide">
+    <a class="shut_yo_mouth"><i class="icon-money" style="font-size: 10rem"></i></a>
+    <%= render partial: "shared/menu" %>
+</div>
+
+<a class="open_sesame">SHOW THE MENU</a>
+
+<script>
+    $('a.open_sesame').click(function(){
+        $('.menu').fadeIn();
+    });
+    $('a.shut_yo_mouth').click(function(){
+        $('.menu').fadeOut();
+    });
+</script>
