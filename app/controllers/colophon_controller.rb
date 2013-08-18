@@ -1,0 +1,2 @@
+class ColophonController < ApplicationController
+end
