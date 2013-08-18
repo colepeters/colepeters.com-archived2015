@@ -1,5 +1,6 @@
 ColepetersCom::Application.routes.draw do
   get "welcome/index"
+  get "hello/index"
   get "artefacts/index"
   get "library/index"
   get "colophon/index"
