@@ -9,11 +9,11 @@
     <article>
         <p class="block title">contents:</p>
         <ul class="contents_list">
-            <li><%= link_to "Hello", hello_index_path %></li>
-            <li><%= link_to "Artefacts", artefacts_index_path %></a></li>
+            <li><%= link_to_unless_current "Hello", hello_index_path %></li>
+            <li><%= link_to_unless_current "Artefacts", artefacts_index_path %></a></li>
             <li><a href="">Archives</a></li>
-            <li><%= link_to "Library", library_index_path %></li>
-            <li><%= link_to "Colophon", colophon_index_path %></li>
+            <li><%= link_to_unless_current "Library", library_index_path %></li>
+            <li><%= link_to_unless_current "Colophon", colophon_index_path %></li>
         </ul>
     </article>
     <article>
