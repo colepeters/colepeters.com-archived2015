@@ -33,23 +33,48 @@ $coral: #FF4040;
 $inact: hsl(0,0,80);        // Inactive links
 
 // Mixins
-@mixin whitneyBook {
+@mixin knockout30 {
+    font-family: 'Knockout 30 A', 'Knockout 30 B';
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin knockout31 {
+    font-family: 'Knockout 31 A', 'Knockout 31 B';
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin knockout32 {
+    font-family: 'Knockout 32 A', 'Knockout 32 B';
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin knockout33 {
+    font-family: 'Knockout 33 A', 'Knockout 33 B';
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin knockout34 {
+    font-family: 'Knockout 34 A', 'Knockout 34 B';
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin whitney {
     font-family: 'Whitney SSm A', 'Whitney SSm B';
     font-weight: 400;
     font-style: normal;
 }
 
-@mixin whitneySemiBold {
-    font-family: 'Whitney SSm A', 'Whitney SSm B';
-    font-weight: 600;
-    font-style: normal;
-    }
-
-@mixin whitneySCLight {
-    font-family: 'Whitney SSm SC A', 'Whitney SSm SC B';
-    font-weight: 300;
-    font-style: normal;
-}
+// Breakpoints
+$screen_small: "screen and (max-width: 320px)";
+$screen_med: "screen and (max-width: 480px)";
+$screen_large: "screen and (max-width: 1024px)";
+$screen_huge: "screen and (min-width: 1280px)";
+$screen_large_up: "screen and (min-width: 1024px)";
 
 // Style
 
@@ -64,15 +89,19 @@ html {
     }
 
 body {
-    @include whitneyBook;
     font-size: 1.5rem;
     line-height: 2rem;
     color: $txtrg;
     background: $bgclr;
+    -webkit-font-smoothing: antialiased;
     }
 
+@media screen and (max-width: 320px) { body { @include knockout31; } }
+@media screen and (max-width: 480px) { body { @include knockout32; } }
+@media screen and (min-width: 1204px) { body { @include knockout33; } }
+
 bm {
-    @include whitneySemiBold;
+    @include knockout34;
 }
 
 p.indent {
@@ -84,16 +113,16 @@ p.block + p {
 }
 
 .title {
-    @include whitneySCLight;
+    @include knockout34;
     color: $txtlt;
     letter-spacing: 1px;
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 
 .contents_list,
 .contents_list li {
     list-style: none;
-    line-height: 2rem;
-    font-size: 1.25rem;
     color: $inact;
 }
 
@@ -123,6 +152,9 @@ section {
     header { 
         @include span-columns(3);
         }
+    &:first-of-type header + article {
+        @include knockout34;
+    }
     article { 
         @include span-columns(9);
         @include omega();
