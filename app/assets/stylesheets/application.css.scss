@@ -46,9 +46,8 @@ $inact: hsl(0,0,80);            // Inactive links
     font-style: normal;
 }
 
-@mixin whitneySCLight {
+@mixin whitneySC {
     font-family: 'Whitney SSm SC A', 'Whitney SSm SC B';
-    font-weight: 300;
     font-style: normal;
 }
 
@@ -74,7 +73,7 @@ html {
 body {
     @include whitneyBook;
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: 2.333rem;
     color: $txtrg;
     background: $bgclr;
     -webkit-font-smoothing: antialiased;
@@ -93,7 +92,7 @@ p.block + p {
 }
 
 .title {
-    @include whitneySCLight;
+    @include whitneySC;
     color: $txtlt;
     letter-spacing: 1px;
     font-size: 1rem;
@@ -106,39 +105,41 @@ p.block + p {
     color: $inact;
 }
 
-a:link,
-a:visited,
-a:active {
-    color: $coral;
-    border-bottom: 1px solid transparent;
-    @include transition( all 0.2s ease-out );
-}
-
-a:hover,
-a:focus {
-    border-bottom: 1px solid $coral;
-}
-
 a {
+    &:link,
+    &:visited,
+    &:active {
+        color: $coral;
+        border-bottom: 1px solid transparent;
+        @include transition( all 0.2s ease-out );
+    }
+
+    &:hover,
+    &:focus {
+        border-bottom: 1px solid $coral;
+    }
+
     &.open_sesame,
     &.shut_yo_mouth {
+        @include transition( all 0.3s ease-out );
         color: $coral;
         &:hover {
             cursor: pointer;
         }
     }
+
     &.shut_yo_mouth {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: 100;
         font-size: 6rem;
         border-bottom: 6px solid transparent;
-        @include transition( all 0.3s ease-out );
         &:hover {
             color: $txtlt;
             border-bottom: 6px solid $coral;
         }
     }
 }
+
 
 //      -------------------------------------------------
 //
@@ -194,11 +195,29 @@ section.hello {
     article{
         @include span-columns(6);
         @include omega();
-        font-size: 1.25rem;
-        text-align: justify;
 
         p + p {
             margin-top: 2rem;
         }
+    }
+}
+
+
+//      -------------------------------------------------
+//
+//      Animations
+//
+//      -------------------------------------------------
+
+body {
+    @include animation(fadeIn 0.6s ease-in);
+}
+
+@include keyframes(fadeIn) {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
