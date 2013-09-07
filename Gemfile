@@ -41,6 +41,9 @@ gem 'neat'
 # Font Awesome
 gem "font-awesome-rails"
 
+# jQuery Turbolinks
+gem 'jquery-turbolinks'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
