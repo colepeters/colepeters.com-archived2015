@@ -90,7 +90,7 @@ p.indent {
     text-indent: 4rem;
 }
 
-p.block + p {
+p + p {
     margin-top: 2rem;
 }
 
@@ -191,15 +191,19 @@ section {
 }
 
 
-section.hello {
+section.hello,
+section.artefacts {
     article{
         @include span-columns(6);
         @include omega();
-
-        p + p {
-            margin-top: 2rem;
-        }
     }
+}
+
+i {
+    display: inline-block !important;
+    margin-right: 1rem;
+    width: 20px !important;
+    color: $txtlt;
 }
 
 
