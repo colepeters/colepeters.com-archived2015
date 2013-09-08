@@ -143,6 +143,16 @@ a {
     }
 }
 
+::selection {
+    background: $coral;
+    color: $bgclr;
+}
+
+::-moz-selection {
+    background: $coral;
+    color: $bgclr;
+}
+
 
 /* ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
 
