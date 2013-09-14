@@ -2,6 +2,7 @@ ColepetersCom::Application.routes.draw do
   get "welcome/index"
   get "hello/index"
   get "artefacts/index"
+  get "archives/index"
   get "library/index"
   get "colophon/index"
   # The priority is based upon order of creation: first created -> highest priority.
