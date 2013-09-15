@@ -44,6 +44,9 @@ gem "font-awesome-rails"
 # jQuery Turbolinks
 gem 'jquery-turbolinks'
 
+# Encode email
+gem 'actionview-encoded_mail_to'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
