@@ -172,10 +172,9 @@ a {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: 100;
         font-size: 6rem;
-        border-bottom: 6px solid transparent;
+        border-bottom: none;
         &:hover {
             color: $txtlt;
-            border-bottom: 6px solid $coral;
         }
     }
 }
