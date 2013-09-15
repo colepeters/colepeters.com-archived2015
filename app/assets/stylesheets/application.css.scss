@@ -45,7 +45,10 @@ $inact: hsl(0,0,80);            // Inactive links
 $coral: #FF4040;                // Coral
 
 // Breakpoints
-$small: new-breakpoint(max-width 480px 1);
+$mini: new-breakpoint(max-width 480px 1);
+$small: new-breakpoint(max-width 580px 1);
+$medium: new-breakpoint(max-width 780px 12);
+$large: new-breakpoint(max-width 1260px 12);
 
 // Mixins
 @mixin whitneyBook {
@@ -85,9 +88,16 @@ body {
     color: $txtrg;
     background: $bgclr;
     -webkit-font-smoothing: antialiased;
-    @include media($small) {
+    @include media ($medium) {
         font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+    @include media($small) {
+        font-size: 1.4rem;
         line-height: 2rem;
+    }
+    @include media($mini) {
+        font-size: 1.3rem;
     }
     }
 
@@ -201,6 +211,10 @@ section {
     @include outer-container;
     margin-top: 8rem;
     margin-bottom: 8rem;
+    @include media($large) {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
     @include media($small) {
         margin-top: 4rem;
         padding-left: 10px;
@@ -208,20 +222,21 @@ section {
     }
     &:first-of-type {
         @include media($small) {
-            margin-bottom: 4rem;
+            margin-bottom: -4rem;
         }
 
     }
 
     header { 
         @include span-columns(3);
-        @include media($small) {
-            @include span-columns(1);
-        }
         & + article {
             @include media($small) {
                 @include span-columns(1);
             }
+        }
+        @include media($small) {
+            @include span-columns(1);
+            margin-bottom: 4rem;
         }
         }
     article { 
@@ -266,6 +281,10 @@ section.artefacts {
     article{
         @include span-columns(6);
         @include omega();
+        @include media ($large) {
+            @include span-columns(8);
+            @include omega(0);
+        }
         @include media($small) {
             @include span-columns(1);
         }
