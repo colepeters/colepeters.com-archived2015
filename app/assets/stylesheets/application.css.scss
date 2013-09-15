@@ -45,7 +45,7 @@ $inact: hsl(0,0,80);            // Inactive links
 $coral: #FF4040;                // Coral
 
 // Breakpoints
-$small: new-breakpoint(max-width 480px 2);
+$small: new-breakpoint(max-width 480px 1);
 
 // Mixins
 @mixin whitneyBook {
@@ -85,6 +85,10 @@ body {
     color: $txtrg;
     background: $bgclr;
     -webkit-font-smoothing: antialiased;
+    @include media($small) {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
     }
 
 bm {
@@ -142,6 +146,26 @@ a {
         &:hover {
             cursor: pointer;
         }
+        &.small_only {
+            display: none;
+            @include media($small) {
+                display: block;
+                position: fixed;
+                top: 26px;
+                right: 26px;
+                font-weight: 100;
+                font-size: 3rem;
+                border-bottom: none !important;
+            }
+        }
+    }
+
+    &.open_sesame {
+        &:not(.small_only) {
+            @include media($small) {
+                display: none;
+            }
+        }
     }
 
     &.shut_yo_mouth {
@@ -183,27 +207,35 @@ section {
         padding-left: 10px;
         padding-right: 10px;
     }
+    &:first-of-type {
+        @include media($small) {
+            margin-bottom: 4rem;
+        }
+
+    }
 
     header { 
         @include span-columns(3);
         @include media($small) {
-            @include span-columns(2);
+            @include span-columns(1);
+        }
+        & + article {
+            @include media($small) {
+                @include span-columns(1);
+            }
         }
         }
     article { 
         @include span-columns(9);
         @include omega();
-        @include media($small) {
-            @include span-columns(2);
-        }
         }
     article + article {
         @include shift(3);
-        @include media($small) {
-            @include span-columns(2);
-            @include shift(0);
-        }
         margin-top: 4rem;
+        @include media($small) {
+            @include shift(0);
+            margin-top: 2rem;
+        }
         }
     }
 
@@ -236,7 +268,7 @@ section.artefacts {
         @include span-columns(6);
         @include omega();
         @include media($small) {
-            @include span-columns(2);
+            @include span-columns(1);
         }
     }
 }
