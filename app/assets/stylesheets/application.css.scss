@@ -31,10 +31,10 @@ a { text-decoration: none; }
 // Variables
 $bgclr: rgb(254,254,254);       // Background colour
 $mnclr: rgba(254,254,254,0.95); // Menu background colour
-$txtrg: hsl(0,0,10);            // Text - 90%
-$txtlt: hsl(0,0,40);            // Text - 70%
-$coral: #FF4040;                // Coral, main colour
+$txtrg: hsl(0,0,20);            // Text - 80%
+$txtlt: hsl(0,0,40);            // Text - 60%
 $inact: hsl(0,0,80);            // Inactive links
+$coral: #FF4040;                // Coral
 
 // Mixins
 @mixin whitneyBook {
@@ -84,6 +84,14 @@ body {
 
 bm {
     @include whitneySemiBold;
+}
+
+header + article bm,
+article + article bm {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid $inact;
+    margin-bottom: 1rem;
 }
 
 p.indent {
@@ -212,9 +220,12 @@ section.artefacts {
 
 i {
     display: inline-block !important;
-    margin-right: 1rem;
+    margin-right: -20px;
     width: 20px !important;
     color: $txtlt;
+    position: relative;
+    left: -3rem;
+    text-align: right;
 }
 
 
