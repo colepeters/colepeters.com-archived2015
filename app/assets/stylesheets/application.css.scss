@@ -313,6 +313,8 @@ i {
 
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁ */
 
+.wait {display: none;}
+
 body {
     @include animation(fadeIn 0.6s ease-in);
 }
