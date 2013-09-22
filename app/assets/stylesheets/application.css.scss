@@ -277,7 +277,9 @@ section {
 
 
 section.hello,
-section.artefacts {
+section.artefacts,
+section.archives,
+section.colophon {
     article{
         @include span-columns(6);
         @include omega();
