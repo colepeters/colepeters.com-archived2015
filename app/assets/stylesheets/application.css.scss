@@ -187,6 +187,10 @@ a {
             color: $txtlt;
         }
     }
+
+    &.article_link {
+        font-weight: 600;
+    }
 }
 
 ::selection {
@@ -276,10 +280,7 @@ section {
 }
 
 
-section.hello,
-section.artefacts,
-section.archives,
-section.colophon {
+section.binders_full_of_content {
     article{
         @include span-columns(6);
         @include omega();
