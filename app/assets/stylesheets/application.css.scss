@@ -193,6 +193,22 @@ a {
     }
 }
 
+article a {
+    &.not_small {
+        display: inline;
+        @include media($small) {
+            display: none;
+        }
+    }
+    &.small_only {
+        display: none;
+        @include media($small) {
+            display: inline;
+        }
+    }
+
+}
+
 ::selection {
     background: $coral;
     color: $bgclr;
