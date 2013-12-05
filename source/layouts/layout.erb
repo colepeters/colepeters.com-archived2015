@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- Use title if it's in the page YAML frontmatter -->
+        <title><%= current_page.data.title || "HTML5 Boilerplate" %></title>
+        <meta name="description" content="Cole Peters is a designer and noise-maker, born in Canada and based in England. You will love him.">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="apple-touch-icon" href="cp-touch-icon.png">
+        <link rel="shortcut icon" href="favicon.ico">
+
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/html5.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <div class="menu hide">
+            <a class="shut_yo_mouth">&times;</a>
+            <section>
+            <header>
+                <bm>Cole Peters</bm>
+            </header>
+            <article>
+                <p>Craftsman &amp; noise maker<br>
+                <em>Born in Canada; based in England</em></p>
+            </article>
+            <article>
+                <p class="block title">contents:</p>
+                <ul class="contents_list">
+                    <li><%= link_to 'Hello', '/hello.html' %></li>
+                    <li><%= link_to 'Artefacts', '/artefacts.html' %></li>
+                    <li><%= link_to 'Archives', '/archives.html' %></li>
+                    <li><%= link_to 'Colophon', '/colophon.html' %></li>
+                </ul>
+            </article>
+            <article>
+                <p class="block title">elsewhere:</p>
+                <ul class="contents_list">
+                    <li><a href="http://blog.colepeters.com">Blog</a></li>
+                    <li><a href="http://twitter.com/cole_peters">Twitter</a></li>
+                    <li><a href="http://github.com/colepeters">GitHub</a></li>
+                    <li><a href="http://dribbble.com/colepeters">Dribbble</a></li>
+                    <li><a href="http://cole.vsco.co">VSCO Grid</a></li>
+                    <li><a href="http://colepeters.bandcamp.com">BandCamp</a></li>
+                    <li><a href="http://soundcloud.com/colepeters">Soundcloud</a></li>
+                    <li><a href="http://rdio.com/people/colepeters">Rdio</a></li>
+                    <li><a href="http://www.youtube.com/user/colepeters">YouTube</a></li>
+                    <li><a href="http://readmill.com/colepeters">Readmill</a></li>
+                </ul>
+            </article>
+        </section>
+        </div>
+
+        <section>
+            <header>
+                <bm>Cole Peters</bm>
+            </header>
+            <article>
+                <a class="open_sesame">Menu</a>
+            </article>
+        </section>
+
+        <%= yield %>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>

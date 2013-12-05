@@ -1,0 +1,393 @@
+@charset "UTF-8";
+/*      -------------------------------------------------
+
+        Project:    colepeters.com
+        Author:     DUH!
+        Notes:      Built with Rails, Bourbon, Bourbon
+                    Neat, and H&FJ Cloud.typography
+
+        -------------------------------------------------
+ */
+/* line 2, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/neat/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+
+
+    R E S E T S
+
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁ */
+/* line 23, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+p {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0; }
+
+/* line 26, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+a {
+  text-decoration: none; }
+
+/* ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+
+
+    V A R S   &   M I X I N S
+
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁ */
+/* ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+
+
+    TYPE
+
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁ */
+/* line 78, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+html {
+  font-size: 12px; }
+
+/* line 82, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+body {
+  font-family: 'Whitney SSm A', 'Whitney SSm B';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2.333rem;
+  color: #333333;
+  background: #fefefe;
+  -webkit-font-smoothing: antialiased; }
+  @media screen and (max-width: 780px) {
+    /* line 82, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+    body {
+      font-size: 1.3rem;
+      line-height: 1.8rem; } }
+  @media screen and (max-width: 580px) {
+    /* line 82, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+    body {
+      font-size: 1.4rem;
+      line-height: 2rem; } }
+  @media screen and (max-width: 480px) {
+    /* line 82, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+    body {
+      font-size: 1.3rem; } }
+
+/* line 102, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+bm {
+  font-family: 'Whitney SSm A', 'Whitney SSm B';
+  font-weight: 600;
+  font-style: normal; }
+
+/* line 107, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+header + article bm,
+article + article bm {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 1rem; }
+
+/* line 114, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+p.indent {
+  text-indent: 4rem; }
+
+/* line 118, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+p + p {
+  margin-top: 2rem; }
+
+/* line 122, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+.title {
+  font-family: 'Whitney SSm SC A', 'Whitney SSm SC B';
+  font-style: normal;
+  color: #666666;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  text-transform: uppercase; }
+
+/* line 131, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+.contents_list,
+.contents_list li {
+  list-style: none;
+  color: #cccccc; }
+
+/* line 139, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+a:link, a:visited, a:active {
+  color: #ff4040;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+/* line 146, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+a:hover, a:focus {
+  border-bottom: 1px solid #ff4040; }
+/* line 151, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+a.open_sesame, a.shut_yo_mouth {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  color: #ff4040; }
+  /* line 154, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+  a.open_sesame:hover, a.shut_yo_mouth:hover {
+    cursor: pointer; }
+  /* line 157, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+  a.open_sesame.small_only, a.shut_yo_mouth.small_only {
+    display: none; }
+    @media screen and (max-width: 580px) {
+      /* line 157, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+      a.open_sesame.small_only, a.shut_yo_mouth.small_only {
+        display: block;
+        position: fixed;
+        top: 26px;
+        right: 26px;
+        font-weight: 100;
+        font-size: 3rem;
+        border-bottom: none !important; } }
+@media screen and (max-width: 580px) {
+  /* line 172, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+  a.open_sesame:not(.small_only) {
+    display: none; } }
+/* line 179, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+a.shut_yo_mouth {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 6rem;
+  border-bottom: none; }
+  /* line 184, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+  a.shut_yo_mouth:hover {
+    color: #666666; }
+/* line 189, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+a.article_link {
+  font-weight: 600; }
+
+/* line 195, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+article a.not_small {
+  display: inline; }
+  @media screen and (max-width: 580px) {
+    /* line 195, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+    article a.not_small {
+      display: none; } }
+/* line 201, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+article a.small_only {
+  display: none; }
+  @media screen and (max-width: 580px) {
+    /* line 201, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+    article a.small_only {
+      display: inline; } }
+
+/* line 210, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+::selection {
+  background: #ff4040;
+  color: #fefefe; }
+
+/* line 215, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+::-moz-selection {
+  background: #ff4040;
+  color: #fefefe; }
+
+/* ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+
+
+        LAYOUT
+  
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁ */
+/* line 228, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+section {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8rem;
+  margin-bottom: 8rem; }
+  /* line 18, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/bourbon/addons/_clearfix.scss */
+  section:before, section:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/bourbon/addons/_clearfix.scss */
+  section:after {
+    clear: both; }
+  @media screen and (max-width: 1260px) {
+    /* line 228, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+    section {
+      padding-left: 4rem;
+      padding-right: 4rem; } }
+  @media screen and (max-width: 580px) {
+    /* line 228, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+    section {
+      margin-top: 4rem;
+      padding-left: 10px;
+      padding-right: 10px; } }
+  @media screen and (max-width: 580px) {
+    /* line 241, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+    section:first-of-type {
+      margin-bottom: -4rem; } }
+  /* line 248, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+  section header {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    /* line 40, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/neat/grid/_span-columns.scss */
+    section header:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 580px) {
+      /* line 250, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+      section header + article {
+        float: left;
+        display: block;
+        margin-right: 38.19821%;
+        width: 100%; }
+        /* line 40, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/neat/grid/_span-columns.scss */
+        section header + article:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 580px) {
+      /* line 248, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+      section header {
+        float: left;
+        display: block;
+        margin-right: 38.19821%;
+        width: 100%;
+        margin-bottom: 4rem; }
+        /* line 40, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/neat/grid/_span-columns.scss */
+        section header:last-child {
+          margin-right: 0; } }
+  /* line 260, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+  section article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+    margin-right: 0; }
+    /* line 40, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/neat/grid/_span-columns.scss */
+    section article:last-child {
+      margin-right: 0; }
+  /* line 264, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+  section article + article {
+    margin-left: 25.58941%;
+    margin-top: 4rem; }
+    @media screen and (max-width: 580px) {
+      /* line 264, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+      section article + article {
+        margin-left: 0%;
+        margin-top: 2rem; } }
+
+/* line 274, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  z-index: 9000;
+  background: rgba(254, 254, 254, 0.95); }
+
+/* line 285, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+.shut_yo_mouth {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9001; }
+
+/* line 292, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+.hide {
+  display: none; }
+
+/* line 298, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+section.binders_full_of_content article {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-right: 0; }
+  /* line 40, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/neat/grid/_span-columns.scss */
+  section.binders_full_of_content article:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 1260px) {
+    /* line 298, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+    section.binders_full_of_content article {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%; }
+      /* line 40, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/neat/grid/_span-columns.scss */
+      section.binders_full_of_content article:last-child {
+        margin-right: 0; }
+      /* line 70, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/neat/grid/_omega.scss */
+      section.binders_full_of_content article:nth-child(0) {
+        margin-right: 0; }
+      /* line 75, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/neat/grid/_omega.scss */
+      section.binders_full_of_content article:nth-child(0+1) {
+        clear: left; } }
+  @media screen and (max-width: 580px) {
+    /* line 298, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+    section.binders_full_of_content article {
+      float: left;
+      display: block;
+      margin-right: 38.19821%;
+      width: 100%; }
+      /* line 40, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/neat/grid/_span-columns.scss */
+      section.binders_full_of_content article:last-child {
+        margin-right: 0; } }
+
+/* line 311, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+i {
+  display: inline-block !important;
+  margin-right: -20px;
+  width: 20px !important;
+  color: #666666;
+  position: relative;
+  left: -3rem;
+  text-align: right; }
+
+/* ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+
+
+      Animations
+
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁ */
+/* line 330, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+.wait {
+  display: none; }
+
+/* line 332, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+body {
+  -webkit-animation: fadeIn 0.6s ease-in;
+  -moz-animation: fadeIn 0.6s ease-in;
+  animation: fadeIn 0.6s ease-in; }
+
+@-webkit-keyframes fadeIn {
+  /* line 337, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+  from {
+    opacity: 0; }
+
+  /* line 340, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+  to {
+    opacity: 1; } }
+
+@-moz-keyframes fadeIn {
+  /* line 337, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+  from {
+    opacity: 0; }
+
+  /* line 340, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+  to {
+    opacity: 1; } }
+
+@-o-keyframes fadeIn {
+  /* line 337, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+  from {
+    opacity: 0; }
+
+  /* line 340, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  /* line 337, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+  from {
+    opacity: 0; }
+
+  /* line 340, /Users/cole/Sites/colepeters.com/colepeters.com/source/css/main.css.scss */
+  to {
+    opacity: 1; } }
