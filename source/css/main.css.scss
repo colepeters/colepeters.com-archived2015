@@ -164,6 +164,9 @@ a {
                 font-size: 3rem;
                 border-bottom: none !important;
             }
+            & i.fa {
+                color: $coral;
+            }
         }
     }
 
@@ -176,10 +179,11 @@ a {
     }
 
     &.shut_yo_mouth {
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 100;
+        font-weight: 500;
         font-size: 6rem;
         border-bottom: none;
+        margin-top: 5px;
+        margin-right: 7px;
         &:hover {
             color: $txtlt;
         }

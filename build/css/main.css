@@ -142,44 +142,48 @@ a.open_sesame, a.shut_yo_mouth {
         font-weight: 100;
         font-size: 3rem;
         border-bottom: none !important; } }
+    /* line 168, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+    a.open_sesame.small_only i.fa, a.shut_yo_mouth.small_only i.fa {
+      color: #ff4040; }
 @media screen and (max-width: 580px) {
-  /* line 172, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+  /* line 175, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
   a.open_sesame:not(.small_only) {
     display: none; } }
-/* line 179, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+/* line 182, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
 a.shut_yo_mouth {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 100;
+  font-weight: 500;
   font-size: 6rem;
-  border-bottom: none; }
-  /* line 184, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+  border-bottom: none;
+  margin-top: 5px;
+  margin-right: 7px; }
+  /* line 188, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
   a.shut_yo_mouth:hover {
     color: #666666; }
-/* line 189, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+/* line 193, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
 a.article_link {
   font-weight: 600; }
 
-/* line 195, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+/* line 199, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
 article a.not_small {
   display: inline; }
   @media screen and (max-width: 580px) {
-    /* line 195, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+    /* line 199, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
     article a.not_small {
       display: none; } }
-/* line 201, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+/* line 205, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
 article a.small_only {
   display: none; }
   @media screen and (max-width: 580px) {
-    /* line 201, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+    /* line 205, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
     article a.small_only {
       display: inline; } }
 
-/* line 210, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+/* line 214, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
 ::selection {
   background: #ff4040;
   color: #fefefe; }
 
-/* line 215, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+/* line 219, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
 ::-moz-selection {
   background: #ff4040;
   color: #fefefe; }
@@ -190,7 +194,7 @@ article a.small_only {
         LAYOUT
   
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁ */
-/* line 228, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+/* line 232, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
 section {
   *zoom: 1;
   max-width: 68em;
@@ -206,21 +210,21 @@ section {
   section:after {
     clear: both; }
   @media screen and (max-width: 1260px) {
-    /* line 228, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+    /* line 232, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
     section {
       padding-left: 4rem;
       padding-right: 4rem; } }
   @media screen and (max-width: 580px) {
-    /* line 228, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+    /* line 232, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
     section {
       margin-top: 4rem;
       padding-left: 10px;
       padding-right: 10px; } }
   @media screen and (max-width: 580px) {
-    /* line 241, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+    /* line 245, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
     section:first-of-type {
       margin-bottom: -4rem; } }
-  /* line 248, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+  /* line 252, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
   section header {
     float: left;
     display: block;
@@ -230,7 +234,7 @@ section {
     section header:last-child {
       margin-right: 0; }
     @media screen and (max-width: 580px) {
-      /* line 250, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+      /* line 254, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
       section header + article {
         float: left;
         display: block;
@@ -240,7 +244,7 @@ section {
         section header + article:last-child {
           margin-right: 0; } }
     @media screen and (max-width: 580px) {
-      /* line 248, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+      /* line 252, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
       section header {
         float: left;
         display: block;
@@ -250,7 +254,7 @@ section {
         /* line 40, /Users/cole/Sites/colepeters.com/source/css/neat/grid/_span-columns.scss */
         section header:last-child {
           margin-right: 0; } }
-  /* line 260, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+  /* line 264, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
   section article {
     float: left;
     display: block;
@@ -260,17 +264,17 @@ section {
     /* line 40, /Users/cole/Sites/colepeters.com/source/css/neat/grid/_span-columns.scss */
     section article:last-child {
       margin-right: 0; }
-  /* line 264, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+  /* line 268, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
   section article + article {
     margin-left: 25.58941%;
     margin-top: 4rem; }
     @media screen and (max-width: 580px) {
-      /* line 264, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+      /* line 268, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
       section article + article {
         margin-left: 0%;
         margin-top: 2rem; } }
 
-/* line 274, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+/* line 278, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
 .menu {
   position: fixed;
   top: 0;
@@ -281,18 +285,18 @@ section {
   z-index: 9000;
   background: rgba(254, 254, 254, 0.95); }
 
-/* line 285, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+/* line 289, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
 .shut_yo_mouth {
   position: fixed;
   top: 20px;
   right: 20px;
   z-index: 9001; }
 
-/* line 292, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+/* line 296, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
 .hide {
   display: none; }
 
-/* line 298, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+/* line 302, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
 section.binders_full_of_content article {
   float: left;
   display: block;
@@ -303,7 +307,7 @@ section.binders_full_of_content article {
   section.binders_full_of_content article:last-child {
     margin-right: 0; }
   @media screen and (max-width: 1260px) {
-    /* line 298, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+    /* line 302, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
     section.binders_full_of_content article {
       float: left;
       display: block;
@@ -319,7 +323,7 @@ section.binders_full_of_content article {
       section.binders_full_of_content article:nth-child(0+1) {
         clear: left; } }
   @media screen and (max-width: 580px) {
-    /* line 298, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+    /* line 302, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
     section.binders_full_of_content article {
       float: left;
       display: block;
@@ -329,7 +333,7 @@ section.binders_full_of_content article {
       section.binders_full_of_content article:last-child {
         margin-right: 0; } }
 
-/* line 311, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+/* line 315, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
 i {
   display: inline-block !important;
   margin-right: -20px;
@@ -346,49 +350,49 @@ i {
 
 
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁ */
-/* line 330, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+/* line 334, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
 .wait {
   display: none; }
 
-/* line 332, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+/* line 336, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
 body {
   -webkit-animation: fadeIn 0.6s ease-in;
   -moz-animation: fadeIn 0.6s ease-in;
   animation: fadeIn 0.6s ease-in; }
 
 @-webkit-keyframes fadeIn {
-  /* line 337, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+  /* line 341, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
   from {
     opacity: 0; }
 
-  /* line 340, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+  /* line 344, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
   to {
     opacity: 1; } }
 
 @-moz-keyframes fadeIn {
-  /* line 337, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+  /* line 341, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
   from {
     opacity: 0; }
 
-  /* line 340, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+  /* line 344, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
   to {
     opacity: 1; } }
 
 @-o-keyframes fadeIn {
-  /* line 337, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+  /* line 341, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
   from {
     opacity: 0; }
 
-  /* line 340, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+  /* line 344, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
   to {
     opacity: 1; } }
 
 @keyframes fadeIn {
-  /* line 337, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+  /* line 341, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
   from {
     opacity: 0; }
 
-  /* line 340, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+  /* line 344, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
   to {
     opacity: 1; } }
 
@@ -399,7 +403,7 @@ body {
 
 
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁ */
-/* line 353, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
+/* line 357, /Users/cole/Sites/colepeters.com/source/css/main.css.scss */
 p.callOut {
   background: #eee;
   padding: 1em;
