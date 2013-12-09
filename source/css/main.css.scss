@@ -2,7 +2,7 @@
 
         Project:    colepeters.com
         Author:     DUH!
-        Notes:      Built with Rails, Bourbon, Bourbon
+        Notes:      Built with Middleman, Bourbon, Bourbon
                     Neat, and H&FJ Cloud.typography
 
         -------------------------------------------------
@@ -339,4 +339,18 @@ body {
     to {
         opacity: 1;
     }
+}
+
+/* ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+
+
+      Sectional stuff
+
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁ */
+
+p.callOut {
+    background: #eee;
+    padding: 1em;
+    margin-left: -1em;
 }
