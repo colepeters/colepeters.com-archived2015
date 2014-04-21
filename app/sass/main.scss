@@ -1,32 +1,65 @@
+// ========================================================
+//
+// colepeters.com
+// 2014
+//
+// ========================================================
+
+// ========================================================
+// IMPORTS
+// ========================================================
+
 @import '../bower_components/bourbon/dist/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
-body {
-    background: #fafafa;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
+// ========================================================
+// FONT-FACE
+// ========================================================
+
+@font-face {
+    font-family: "FF Milo Serif";
+    src: url("../fonts/MiloSerifWeb.eot");
+    src: url("../fonts/MiloSerifWeb.woff") format("woff");
+    font-weight: 400;
 }
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: #eee;
-    border-radius: 6px;
-    padding: 60px;
+@font-face {
+    font-family: "FF Milo Serif";
+    src: url("../fonts/MiloSerifWeb-Ita.eot");
+    src: url("../fonts/MiloSerifWeb-Ita.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
 }
 
-.hero-unit h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
+@font-face {
+    font-family: "FF Milo Serif";
+    src: url("../fonts/MiloSerifWeb-Bold.eot");
+    src: url("../fonts/MiloSerifWeb-Bold.woff") format("woff");
+    font-weight: 700;
 }
 
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+
+// ========================================================
+// COLOUR
+// ========================================================
+
+$tcpBackground = #FAFAFA;
+$tcpText = #4D6B80;
+$tcpTextLight= #5C8199;
+$tcpTextDark = #335266;
+$tcpRed = rgb(230,103,103);
+$tcpRedLight = rgba(230,103,103,50);
+
+// ========================================================
+// TYPE
+// ========================================================
+
+$tcpFontStack = "FF Milo Serif", Georgia, serif;
+
+html {
+    font-family: $tcpFontStack;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.6;
+    color: $tcpText;
 }
