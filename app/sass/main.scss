@@ -38,28 +38,128 @@
     font-weight: 700;
 }
 
+@font-face {
+    font-family: "FF Milo Serif SC";
+    src: url("../fonts/MiloSerifScWeb.eot");
+    src: url("../fonts/MiloSerifScWeb.woff") format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "FF Milo Serif SC";
+    src: url("../fonts/MiloSerifScWeb-Bold.eot");
+    src: url("../fonts/MiloSerifScWeb-Bold.woff") format("woff");
+    font-weight: 700;
+}
+
 
 // ========================================================
 // COLOUR
 // ========================================================
 
-$tcpBackground = #FAFAFA;
-$tcpText = #4D6B80;
-$tcpTextLight= #5C8199;
-$tcpTextDark = #335266;
-$tcpRed = rgb(230,103,103);
-$tcpRedLight = rgba(230,103,103,50);
+$tcpBackground: #FAFAFA;
+$tcpText: #4D6B80;
+$tcpTextLight: #5C8199;
+$tcpTextDark: #335266;
+$tcpRed: rgb(230,103,103);
+$tcpRedLight: rgba(230,103,103,0.5);
 
 // ========================================================
 // TYPE
 // ========================================================
 
-$tcpFontStack = "FF Milo Serif", Georgia, serif;
+$tcpFontStack: "FF Milo Serif", Georgia, serif;
+$tcpFontStackSC: "FF Milo Serif SC", Georgia, serif;
 
 html {
     font-family: $tcpFontStack;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 1.6;
     color: $tcpText;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.618rem;
+    line-height: 1.371;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h2 {
+    font-family: $tcpFontStackSC;
+    font-weight: 700;
+    font-size: 1rem;
+    color: $tcpTextDark;
+    text-transform: lowercase;
+}
+
+.site-header h2 {
+    margin-top: 0;
+    font-weight: 400;
+    color: $tcpTextLight;
+    letter-spacing: 1px;
+}
+
+
+// ========================================================
+// LAYOUT
+// ========================================================
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    @include outer-container();
+    max-width: 1024px;
+}
+
+.site-header {
+    @include span-columns(9);
+    @include shift(3);
+    margin-top: 2rem;
+
+    & .logo {
+        width: 52px;
+        height: 52px;
+        display: block;
+        margin-bottom: 2rem;
+        background: url("../images/tcpInsignia_2014.svg");
+        background-size: cover;
+        border-radius: 999px;
+    }
+}
+
+.hr {
+    @include span-columns(12);
+    margin-top: 2rem;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid $tcpRed;
+    
+    // Retina HRs motherfucker!
+    @media
+    (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi) {
+        @include transform(scaleY(0.5));
+    }
+}
+
+.section-title {
+    @include span-columns(3);
+}
+
+section {
+    &.hello .section-title,
+    &.hello article {
+        margin-top: 2rem;
+    }
+}
+
+article {
+    @include span-columns(9);
 }
