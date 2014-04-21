@@ -25,6 +25,25 @@ module.exports = function (grunt) {
             dist: 'dist'
         },
 
+        sass: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= yeoman.app %>/sass',
+                    src: ['*.scss'],
+                    dest: '<%= yeoman.app %>/styles',
+                    ext: '.css'
+                }],
+
+                options: {
+                    loadPath: [
+                        '<%= yeoman.app %>/bower_components/bourbon/app/assets/stylesheets',
+                        '<%= yeoman.app %>/bower_components/neat/app/assets/stylesheets'
+                    ]
+                }
+            }
+        },
+
         // Watches files for changes and runs tasks based on the changed files
         watch: {
             bower: {
@@ -46,8 +65,8 @@ module.exports = function (grunt) {
                 files: ['Gruntfile.js']
             },
             styles: {
-                files: ['<%= config.app %>/styles/{,*/}*.css'],
-                tasks: ['newer:copy:styles', 'autoprefixer']
+                files: ['<%= yeoman.app %>/sass/{,*/}*.scss'],
+                tasks: ['sass', 'newer:copy:styles', 'autoprefixer']
             },
             livereload: {
                 options: {
@@ -356,6 +375,7 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'clean:dist',
         'useminPrepare',
+        'sass',
         'concurrent:dist',
         'autoprefixer',
         'concat',
