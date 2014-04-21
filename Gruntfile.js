@@ -29,16 +29,16 @@ module.exports = function (grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '<%= yeoman.app %>/sass',
+                    cwd: '<%= config.app %>/sass',
                     src: ['*.scss'],
-                    dest: '<%= yeoman.app %>/styles',
+                    dest: '<%= config.app %>/styles',
                     ext: '.css'
                 }],
 
                 options: {
                     loadPath: [
-                        '<%= yeoman.app %>/bower_components/bourbon/app/assets/stylesheets',
-                        '<%= yeoman.app %>/bower_components/neat/app/assets/stylesheets'
+                        '<%= config.app %>/bower_components/bourbon/app/assets/stylesheets',
+                        '<%= config.app %>/bower_components/neat/app/assets/stylesheets'
                     ]
                 }
             }
@@ -65,7 +65,7 @@ module.exports = function (grunt) {
                 files: ['Gruntfile.js']
             },
             styles: {
-                files: ['<%= yeoman.app %>/sass/{,*/}*.scss'],
+                files: ['<%= config.app %>/sass/{,*/}*.scss'],
                 tasks: ['sass', 'newer:copy:styles', 'autoprefixer']
             },
             livereload: {
