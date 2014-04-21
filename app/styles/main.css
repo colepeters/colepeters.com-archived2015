@@ -33,7 +33,7 @@ html {
   font-family: "FF Milo Serif", Georgia, serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.618;
   color: #4d6b80;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased; }
@@ -57,6 +57,24 @@ h2 {
   font-weight: 400;
   color: #5c8199;
   letter-spacing: 1px; }
+
+/* Link underlines with gradient technique has been
+adapted from Medium - https://medium.com/designing-medium/7c03a9274f9 */
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  display: inline;
+  padding: 0;
+  line-height: 1.6rem;
+  background-image: linear-gradient(rgba(230, 103, 103, 0) 50%, rgba(230, 103, 103, 0.5) 50%);
+  -webkit-background-size: 2px 2px;
+  background-size: 2px 2px;
+  background-position: 0px 1rem;
+  background-repeat: repeat-x; }
+  a:link, a:visited {
+    color: #4d6b80; }
+  a:hover, a:focus {
+    color: #e66767; }
 
 img {
   max-width: 100%; }
@@ -126,3 +144,17 @@ article {
   width: 74.41059%; }
   article:last-child {
     margin-right: 0; }
+
+.contact ul {
+  margin-top: 2rem;
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 1.6; }
+  .contact ul a {
+    text-decoration: none;
+    font-style: italic; }
+  .contact ul img {
+    max-width: 16px;
+    margin-right: 8px;
+    position: relative;
+    top: 2px; }

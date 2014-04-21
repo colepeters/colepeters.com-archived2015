@@ -75,7 +75,7 @@ html {
     font-family: $tcpFontStack;
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.618;
     color: $tcpText;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -102,6 +102,32 @@ h2 {
     font-weight: 400;
     color: $tcpTextLight;
     letter-spacing: 1px;
+}
+
+/* Link underlines with gradient technique has been
+adapted from Medium - https://medium.com/designing-medium/7c03a9274f9 */
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+    display: inline;
+    padding: 0;
+    line-height: 1.6rem;
+    background-image: linear-gradient(rgba(230, 103, 103, 0) 50%, rgba(230, 103, 103, 0.5) 50%);
+    -webkit-background-size: 2px 2px;
+    background-size: 2px 2px;
+    background-position: 0px 1rem;
+    background-repeat: repeat-x;
+
+    &:link,
+    &:visited {
+        color: $tcpText;
+    }
+
+    &:hover,
+    &:focus {
+        color: $tcpRed;
+    }
 }
 
 
@@ -162,4 +188,23 @@ section {
 
 article {
     @include span-columns(9);
+}
+
+.contact ul {
+    margin-top: 2rem;
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.6;
+
+    & a {
+        text-decoration: none;
+        font-style: italic;
+    }
+
+    & img {
+        max-width: 16px;
+        margin-right: 8px;
+        position: relative;
+        top: 2px;
+    }
 }
