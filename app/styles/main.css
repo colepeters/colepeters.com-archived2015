@@ -49,6 +49,7 @@ h2 {
   font-family: "FF Milo Serif SC", Georgia, serif;
   font-weight: 700;
   font-size: 1rem;
+  line-height: 2.2;
   color: #335266;
   text-transform: lowercase; }
 
@@ -75,6 +76,8 @@ a {
     color: #4d6b80; }
   a:hover, a:focus {
     color: #e66767; }
+  a.project-link {
+    font-style: italic; }
 
 img {
   max-width: 100%; }
@@ -144,6 +147,9 @@ article {
   width: 74.41059%; }
   article:last-child {
     margin-right: 0; }
+
+.row article:first-child {
+  margin-left: 25.58941%; }
 
 .contact ul {
   margin-top: 2rem;
