@@ -159,8 +159,10 @@ article {
   .contact ul a {
     text-decoration: none;
     font-style: italic; }
-  .contact ul img {
-    max-width: 16px;
-    margin-right: 8px;
-    position: relative;
-    top: 2px; }
+
+.contact ul img,
+img.link-icon {
+  max-width: 16px;
+  margin-right: 8px;
+  position: relative;
+  top: 2px; }
