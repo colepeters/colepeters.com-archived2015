@@ -154,6 +154,11 @@ img {
     @include shift(3);
     margin-top: 2rem;
 
+    @media screen and (max-width: 640px) {
+        @include span-columns(12);
+        @include shift(0);
+    }
+
     & .logo {
         width: 52px;
         height: 52px;
@@ -182,6 +187,10 @@ img {
 
 .section-title {
     @include span-columns(3);
+
+    @media screen and (max-width: 640px) {
+        @include span-columns(12);
+    }
 }
 
 section {
@@ -193,10 +202,18 @@ section {
 
 article {
     @include span-columns(9);
+
+    @media screen and (max-width: 640px) {
+        @include span-columns(12);
+    }
 }
 
 .row article:first-child {
     @include shift(3);
+
+    @media screen and (max-width: 640px) {
+        @include shift(0);
+    }
 }
 
 .contact ul {

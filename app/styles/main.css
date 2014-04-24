@@ -101,6 +101,15 @@ img {
   margin-top: 2rem; }
   .site-header:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 640px) {
+    .site-header {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-left: 0%; }
+      .site-header:last-child {
+        margin-right: 0; } }
   .site-header .logo {
     width: 52px;
     height: 52px;
@@ -136,6 +145,14 @@ img {
   width: 23.23176%; }
   .section-title:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 640px) {
+    .section-title {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .section-title:last-child {
+        margin-right: 0; } }
 
 section.hello .section-title, section.hello article {
   margin-top: 2rem; }
@@ -147,9 +164,20 @@ article {
   width: 74.41059%; }
   article:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 640px) {
+    article {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      article:last-child {
+        margin-right: 0; } }
 
 .row article:first-child {
   margin-left: 25.58941%; }
+  @media screen and (max-width: 640px) {
+    .row article:first-child {
+      margin-left: 0%; } }
 
 .contact ul {
   margin-top: 2rem;
