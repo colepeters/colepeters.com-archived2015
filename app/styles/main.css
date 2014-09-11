@@ -67,11 +67,12 @@ a {
   display: inline;
   padding: 0;
   line-height: 1.6rem;
-  background-image: linear-gradient(rgba(230, 103, 103, 0) 50%, rgba(230, 103, 103, 0.5) 50%);
+  background-image: linear-gradient(rgba(230, 103, 103, 0) 50%, rgba(230, 103, 103, 0.6) 50%);
   -webkit-background-size: 2px 2px;
   background-size: 2px 2px;
   background-position: 0px 1rem;
-  background-repeat: repeat-x; }
+  background-repeat: repeat-x;
+  font-style: italic; }
   a:link, a:visited {
     color: #4d6b80; }
   a:hover, a:focus {
@@ -180,7 +181,7 @@ article {
       margin-left: 0%; } }
 
 dt {
-  font-style: italic; }
+  font-weight: bold; }
 
 dd + dt {
   margin-top: 2rem; }
