@@ -77,8 +77,6 @@ a {
     color: #4d6b80; }
   a:hover, a:focus {
     color: #e66767; }
-  a.project-link {
-    font-style: italic; }
 
 img {
   max-width: 100%; }
