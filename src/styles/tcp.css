@@ -1,8 +1,41 @@
-.light { font-weight: 300; }
-.ls-n1 { letter-spacing: -1px; }
+:root {
+  --dark-gray: #323E47;
+  --tcp-red: #e66767;
+}
 
 html,
 body {
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: greyscale;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.light { font-weight: 300; }
+.ls-n1 { letter-spacing: -1px; }
+
+.logo {
+  width: 60px;
+  height: 60px;
+  background-image: url('../images/tcpInsignia2014.svg');
+  background-size: cover;
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s ease-out;
+  display: inline;
+  padding: 0;
+  background-image: linear-gradient(rgba(230, 103, 103, 0) 50%, rgba(230, 103, 103, 0.6) 50%);
+  -webkit-background-size: 2px 2px;
+  -moz-background-size: 2px 2px;
+  background-size: 2px 2px;
+  background-position: 0px 1rem;
+  background-repeat: repeat-x;
+  color: var(--dark-gray);
+}
+
+a:hover,
+a:focus {
+  color: var(--tcp-red);
+  text-decoration: none;
 }

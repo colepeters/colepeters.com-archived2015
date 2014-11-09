@@ -19,6 +19,7 @@
 :root {
   --font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
   --dark-gray: #323E47;
+  --light-gray: #BEC6CC;
   --lighter-gray: #F5F8FA;
 }
 
@@ -28,4 +29,5 @@
 
 ============================ */
 
-@import "./tcp";
+@import "./tcp.css";
+

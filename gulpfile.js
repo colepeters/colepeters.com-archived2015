@@ -11,8 +11,12 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('./styles'));
 });
 
-gulp.task('default', ['styles'], function() {
-  gulp.watch('./src/styles/*.css', function() {
-    gulp.run('styles');
-  });
+gulp.task('images', function() {
+  gulp.src('./src/images/*.*')
+    .pipe(gulp.dest('./images'));
+});
+
+gulp.task('default', ['styles', 'images'], function() {
+  gulp.watch('./src/styles/*.css', ['styles']);
+  gulp.watch('./src/images/*.*', ['images']);
 });
