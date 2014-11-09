@@ -1,0 +1,37 @@
+
+.field-dark {
+  color: white;
+  background-color: var(--darken-3);
+  border: 1px solid var(--darken-1);
+  border-radius: var(--border-radius);
+}
+
+.field-dark::placeholder {
+  color: rgba(#fff,.75);
+}
+
+.field-dark:focus {
+  outline: 0;
+  border: 1px solid rgba(#fff,.5);
+}
+
+.field-dark:read-only:not(select) {
+  background-color: rgba(#fff,.25);
+}
+
+.field-dark:invalid {
+  border-color: var(--red);
+}
+
+.field-dark.is-success {
+  border-color: var(--green);
+}
+
+.field-dark.is-warning {
+  border-color: var(--yellow);
+}
+
+.field-dark.is-error {
+  border-color: var(--red);
+}
+

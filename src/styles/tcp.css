@@ -1,0 +1,8 @@
+.light { font-weight: 300; }
+.ls-n1 { letter-spacing: -1px; }
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: greyscale;
+}
