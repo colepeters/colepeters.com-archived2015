@@ -17,10 +17,12 @@
 ============================ */
 
 :root {
-  --font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
-  --dark-gray: #323E47;
-  --light-gray: #BEC6CC;
-  --lighter-gray: #F5F8FA;
+  --font-family: pt-serif, georgia, serif;
+  --line-height: 1.6;
+  --dark-gray: #3E5A75;
+  --light-gray: #B2B9BF;
+  --lighter-gray: #FAFBFC;
+  --h4: 1.125rem;
 }
 
 /* ============================
@@ -29,5 +31,6 @@
 
 ============================ */
 
+@import "./fonts.css";
 @import "./tcp.css";
 

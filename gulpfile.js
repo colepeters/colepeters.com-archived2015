@@ -16,7 +16,12 @@ gulp.task('images', function() {
     .pipe(gulp.dest('./images'));
 });
 
-gulp.task('default', ['styles', 'images'], function() {
+gulp.task('fonts', function() {
+  gulp.src('./src/fonts/*.*')
+    .pipe(gulp.dest('./fonts'));
+});
+
+gulp.task('default', ['styles', 'images', 'fonts'], function() {
   gulp.watch('./src/styles/*.css', ['styles']);
   gulp.watch('./src/images/*.*', ['images']);
 });

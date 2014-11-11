@@ -1,5 +1,5 @@
 :root {
-  --dark-gray: #323E47;
+  --dark-gray: #3E5A75;
   --tcp-red: #e66767;
 }
 
@@ -9,8 +9,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.light { font-weight: 300; }
-.ls-n1 { letter-spacing: -1px; }
+p,
+dl,
+ol,
+ul {
+  font-size: 1.125rem;
+}
+
+.lh-1p6 {
+  line-height: 1.6;
+}
 
 .logo {
   width: 60px;
@@ -29,7 +37,7 @@ a {
   -webkit-background-size: 2px 2px;
   -moz-background-size: 2px 2px;
   background-size: 2px 2px;
-  background-position: 0px 1rem;
+  background-position: 0px 1.125rem;
   background-repeat: repeat-x;
   color: var(--dark-gray);
 }
