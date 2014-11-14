@@ -94,6 +94,11 @@ a:focus {
 
 .border-white {
   border-color: #fff;
+  transition: 0.3s;
+}
+
+img.border-white:hover {
+  border-color: var(--tcp-red);
 }
 
 .border-red {
