@@ -23,6 +23,9 @@
   --light-gray: #B2B9BF;
   --lighter-gray: #FAFBFC;
   --h4: 1.125rem;
+  --monospace-font-family: "Inconsolata XL", inconsolata, "Letter Gothic Std", consolas, courier, monospace;
+  --darken-1: rgba(10,10,0,.03125);
+  --darken-2: rgba(10,10,0,.0625)
 }
 
 /* ============================
