@@ -22,7 +22,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('images', function() {
-  gulp.src('./src/images/**/*.*')
+  gulp.src('./src/images/*.*')
     .pipe(gulp.dest('./build/images'));
 });
 
@@ -34,5 +34,5 @@ gulp.task('fonts', function() {
 gulp.task('default', ['clean', 'html', 'styles', 'images', 'fonts'], function() {
   gulp.watch('./src/*.html', ['html']);
   gulp.watch('./src/styles/*.css', ['styles']);
-  gulp.watch('./src/images/**/*.*', ['images']);
+  gulp.watch('./src/images/*.*', ['images']);
 });
