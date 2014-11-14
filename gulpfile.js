@@ -12,7 +12,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('images', function() {
-  gulp.src('./src/images/*.*')
+  gulp.src('./src/images/**/*.*')
     .pipe(gulp.dest('./images'));
 });
 
@@ -23,5 +23,5 @@ gulp.task('fonts', function() {
 
 gulp.task('default', ['styles', 'images', 'fonts'], function() {
   gulp.watch('./src/styles/*.css', ['styles']);
-  gulp.watch('./src/images/*.*', ['images']);
+  gulp.watch('./src/images/**/*.*', ['images']);
 });
