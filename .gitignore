@@ -1,4 +1,3 @@
 node_modules/
-fonts/
-styles/
-images/
+build/
+.DS_Store
