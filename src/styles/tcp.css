@@ -1,7 +1,14 @@
 :root {
   --dark-gray: #3E5A75;
   --tcp-red: #e66767;
+  --sans: montserrat, avenir, "helvetica neue", helvetica, sans-serif;
 }
+
+/* ====================================
+ *
+ * Base - element overrides
+ *
+ * ==================================*/
 
 html,
 body {
@@ -14,22 +21,6 @@ dl,
 ol,
 ul {
   font-size: 1.125rem;
-}
-
-.lh-1p6 {
-  line-height: 1.6;
-}
-
-.bg-dark {
-  background-color: rgba(0,10,25,0.6);
-}
-
-.logo {
-  width: 60px;
-  height: 60px;
-  background-image: url('../images/tcpInsignia2014.svg');
-  background-size: cover;
-  border-radius: 50%;
 }
 
 a {
@@ -50,4 +41,81 @@ a:hover,
 a:focus {
   color: var(--tcp-red);
   text-decoration: none;
+}
+
+/* ====================================
+ *
+ * Custom classes
+ *
+ * ==================================*/
+
+.sans {
+  font-family: var(--sans);
+}
+
+.relative {
+  position: relative;
+}
+
+.section-heading::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  border-top: 1px solid var(--tcp-red);
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+
+.light {
+  font-weight: 300;
+}
+
+.smallcaps {
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 2;
+}
+
+.lh-1p6 {
+  line-height: 1.6;
+}
+
+.bg-dark {
+  background-color: rgba(0,10,25,0.6);
+}
+
+.border-8 {
+  border: 8px solid;
+}
+
+.border-white {
+  border-color: #fff;
+}
+
+.border-red {
+  border-color: var(--tcp-red);
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.background-none {
+  background: none;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  background-image: url('../images/tcpInsignia2014.png');
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.shadow {
+  box-shadow: 0px 4px 8px rgba(0,10,30,0.125)
 }
