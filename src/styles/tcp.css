@@ -29,7 +29,7 @@ a {
   transition: 0.3s ease-out;
   display: inline;
   padding: 0;
-  background-image: linear-gradient(rgba(230, 103, 103, 0) 50%, rgba(230, 103, 103, 0.6) 50%);
+  background-image: linear-gradient(rgba(230, 103, 103, 0) 50%, rgba(230, 103, 103, 0.8) 50%);
   -webkit-background-size: 2px 2px;
   -moz-background-size: 2px 2px;
   background-size: 2px 2px;
