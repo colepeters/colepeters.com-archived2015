@@ -16,6 +16,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media screen and (max-width: 51.99em) {
+  h3.h4 {
+    font-size: 1.25rem;
+  }
+}
+
 p,
 dl,
 ol,
