@@ -1,4 +1,6 @@
-# colepeters.com
+colepeters.com
+==============
 
-This is the git repository for my website at [http://colepeters.com](http://colepeters.com).
-Ooooooh.
+This is the repo for [my personal website](https://colepeters.com).
+This current version was built with [BassCSS](https://github.com/jxnblk/basscss).
+Word.
