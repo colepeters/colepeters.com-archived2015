@@ -2,4 +2,5 @@ colepeters.com
 ==============
 
 This is the repo for [my personal website](https://colepeters.com).
-Better README coming soon.
+This current version was built with [BassCSS](https://github.com/jxnblk/basscss).
+Word.
