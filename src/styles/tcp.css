@@ -1,6 +1,6 @@
 :root {
   --dark-gray: #3E5A75;
-  --tcp-red: #e66767;
+  --tcp-blue: #0DC4FC;
   --sans: montserrat, avenir, "helvetica neue", helvetica, sans-serif;
 }
 
@@ -35,7 +35,7 @@ a {
   transition: 0.3s ease-out;
   display: inline;
   padding: 0;
-  background-image: linear-gradient(rgba(230, 103, 103, 0) 50%, rgba(230, 103, 103, 0.8) 50%);
+  background-image: linear-gradient(rgba(var(--tcp-blue), 0) 50%, rgba(var(--tcp-blue), 1.0) 50%);
   -webkit-background-size: 2px 2px;
   -moz-background-size: 2px 2px;
   background-size: 2px 2px;
@@ -46,10 +46,17 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--tcp-red);
+  color: var(--tcp-blue);
   text-decoration: none;
 }
 
+::selection {
+  background-color: rgba(var(--tcp-blue), 0.5);
+}
+
+::-moz-selection {
+  background-color: rgba(var(--tcp-blue), 0.5);
+}
 /* ====================================
  *
  * Custom classes
@@ -68,7 +75,7 @@ a:focus {
   content: "";
   position: absolute;
   height: 1px;
-  border-top: 1px solid var(--tcp-red);
+  border-top: 1px solid var(--tcp-blue);
   top: 50%;
   left: 0;
   right: 0;
@@ -97,4 +104,8 @@ a:focus {
   background-image: url('../images/tcpInsignia2014.png');
   background-size: cover;
   border-radius: 50%;
+}
+
+.bg-tcp-blue {
+  background-color: var(--tcp-blue);
 }
