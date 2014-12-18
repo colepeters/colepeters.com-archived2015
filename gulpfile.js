@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     connect = require('gulp-connect');
 
 gulp.task('clean', function() {
-  del(['build']);
+  del.sync(['build/**']);
 });
 
 gulp.task('html', function() {
@@ -46,3 +46,5 @@ gulp.task('default', ['clean', 'html', 'styles', 'images', 'fonts', 'connect'], 
   gulp.watch('./src/styles/*.css', ['styles']);
   gulp.watch('./src/images/*.*', ['images']);
 });
+
+gulp.task('build', ['clean', 'html', 'styles', 'images', 'fonts']);
