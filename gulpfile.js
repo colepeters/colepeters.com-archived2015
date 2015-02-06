@@ -22,7 +22,8 @@ gulp.task('styles', function() {
     .pipe(autoprefixer('last 2 versions'))
     .pipe(rename({ suffix: '.min'}))
     .pipe(minifycss())
-    .pipe(gulp.dest('./build/css'));
+    .pipe(gulp.dest('./build/css'))
+    .pipe(connect.reload());
 });
 
 gulp.task('fonts', function() {
