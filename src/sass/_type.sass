@@ -6,6 +6,7 @@ body
   -webkit-text-size-adjust: none
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
   font-family: 'Electra', Georgia, serif
   font-size: 1rem
   color: $blueDark
@@ -25,17 +26,27 @@ h1
   line-height: 1
 
 h2
+  margin-bottom: $scale3
   font-size: $scale1
   line-height: 1
   letter-spacing: 1px
-  margin-bottom: $scale3
 
 h3
   @extend h2
-  margin-top: $scale3
+  margin-top: $scale4
   margin-bottom: 0
-  font-weight: 300
   color: $blueBright
+  font-weight: 400
+
+dl
+  margin-bottom: $scale2
+
+dt
+  margin-top: $scale2
+  font-weight: 700
+
+dd
+  margin: 0
 
 // ========================================================
 //
