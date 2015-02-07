@@ -1,9 +1,10 @@
-var gulp = require('gulp'),
-    rename = require('gulp-rename'),
-    mincss = require('gulp-minify-css'),
-    basswork = require('gulp-basswork'),
-    del = require('del'),
-    connect = require('gulp-connect');
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+var minifycss = require('gulp-minify-css');
+var rename = require('gulp-rename');
+var connect = require('gulp-connect');
+var del = require('del');
 
 gulp.task('clean', function() {
   del.sync(['build/**']);
@@ -16,21 +17,17 @@ gulp.task('html', function() {
 });
 
 gulp.task('styles', function() {
-  gulp.src('./src/styles/main.css')
-    .pipe(basswork())
-    .pipe(mincss())
-    .pipe(rename({ extname: '.min.css' }))
-    .pipe(gulp.dest('./build/styles'))
+  gulp.src('./src/sass/styles.sass')
+    .pipe(sass({ style: 'expanded', indentedSyntax: true }))
+    .pipe(autoprefixer('last 2 versions'))
+    .pipe(rename({ suffix: '.min'}))
+    .pipe(minifycss())
+    .pipe(gulp.dest('./build/css'))
     .pipe(connect.reload());
 });
 
-gulp.task('images', function() {
-  gulp.src('./src/images/*.*')
-    .pipe(gulp.dest('./build/images'));
-});
-
 gulp.task('fonts', function() {
-  gulp.src('./src/fonts/*.*')
+  gulp.src('./src/fonts/**')
     .pipe(gulp.dest('./build/fonts'));
 });
 
@@ -41,10 +38,7 @@ gulp.task('connect', function() {
   });
 });
 
-gulp.task('default', ['clean', 'html', 'styles', 'images', 'fonts', 'connect'], function() {
+gulp.task('default', ['clean', 'html', 'fonts', 'styles', 'connect'], function() {
   gulp.watch('./src/*.html', ['html']);
-  gulp.watch('./src/styles/*.css', ['styles']);
-  gulp.watch('./src/images/*.*', ['images']);
+  gulp.watch('./src/sass/**', ['styles']);
 });
-
-gulp.task('build', ['clean', 'html', 'styles', 'images', 'fonts']);
