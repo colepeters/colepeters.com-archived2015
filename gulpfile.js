@@ -42,3 +42,5 @@ gulp.task('default', ['clean', 'html', 'fonts', 'styles', 'connect'], function()
   gulp.watch('./src/*.html', ['html']);
   gulp.watch('./src/sass/**', ['styles']);
 });
+
+gulp.task('build', ['clean', 'html', 'fonts', 'styles']);
