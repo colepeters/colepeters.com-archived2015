@@ -1,0 +1,33 @@
+{
+  "name": "colepeters.com",
+  "version": "1.0.0",
+  "description": "My homepage on the interwebs",
+  "main": "entry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --progress --colors",
+    "dev": "webpack-dev-server --progress --colors",
+    "start": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colepeters/colepeters.com.git"
+  },
+  "author": "Cole Peters",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/colepeters/colepeters.com/issues"
+  },
+  "homepage": "https://github.com/colepeters/colepeters.com#readme",
+  "devDependencies": {
+    "basscss": "^7.0.3",
+    "css-loader": "^0.15.6",
+    "cssnext-loader": "^1.0.1",
+    "jsx-loader": "^0.13.2",
+    "react": "^0.13.3",
+    "react-router": "^0.13.3",
+    "static-site-generator-webpack-plugin": "^1.0.0",
+    "webpack": "^1.10.5",
+    "webpack-dev-server": "^1.10.1"
+  }
+}
